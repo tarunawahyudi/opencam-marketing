@@ -5,12 +5,10 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
 import ThemeToggler from "./ThemeToggler";
-import menuData from "./menuData";
 import {DASHBOARD_URL} from "@/constant";
 
 const Header = () => {
   const [navigationOpen, setNavigationOpen] = useState(false);
-  const [dropdownToggler, setDropdownToggler] = useState(false);
   const [stickyMenu, setStickyMenu] = useState(false);
 
   const pathUrl = usePathname();
@@ -37,7 +35,7 @@ const Header = () => {
       }`}
     >
       <div className="relative mx-auto max-w-c-1390 items-center justify-end px-4 md:px-8 xl:flex 2xl:px-0">
-        <div className="flex w-full items-center justify-start md:justify-between sm:justify-between xl:w-1/4">
+        <div className="flex w-full items-center justify-between xl:w-1/4">
           <a href="/">
             <Image
               src="/images/logo/logo-dark.svg"
