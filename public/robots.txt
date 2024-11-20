@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.opencam.dev
+
+# Sitemaps
+Sitemap: https://www.opencam.dev/sitemap.xml
